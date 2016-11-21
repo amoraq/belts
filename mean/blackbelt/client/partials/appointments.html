@@ -1,0 +1,32 @@
+<div ng-model="appointmentsControllers">
+
+    <form >
+        <table>
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Time</th>
+                    <th>Patient Name</th>
+                    <th>Complaint</th>
+                </tr>
+            </thead>
+            <tbody ng-repeat="">
+                <tr>
+                    <td>
+                        {{appDB.date}}
+                    </td>
+                    <td>
+                        {{appDB.name}}
+                    </td>
+                    <td>
+                        {{appDB.time}}
+                    </td>
+                    <td>
+                        {{appDB.complaint}}
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <input type="submit" ng-cick="newApp()" value="New Appointment">
+    </form>
+</div>
